@@ -1,3 +1,3 @@
-## Pendeêcias 
+## Pendências 
 - Tela splash
 - Lógica do cadastro
