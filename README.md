@@ -60,3 +60,68 @@ lib/
 │   ├── tela_admin.dart
 │   └── tela_perfil.dart
 ```
+
+
+# 🚀 Como Rodar o Projeto ChefUP (Flutter + Firebase)
+
+## 📦 Pré-requisitos
+
+Antes de tudo, você precisa ter:
+
+- ✅ [Flutter instalado](https://docs.flutter.dev/get-started/install)
+- ✅ Conta no [Firebase Console](https://console.firebase.google.com/)
+- ✅ Android Studio ou VS Code configurado com Flutter SDK
+
+---
+
+## 🔧 Passos para rodar
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+```
+
+### 2. Instale as dependências do projeto
+
+```bash
+flutter pub get
+```
+
+### 3. Configure o Firebase
+
+#### 🔹 Android
+
+- No Firebase Console, crie um novo projeto.
+- Registre seu app Android (ex: `com.seuapp.chefup`).
+- Baixe o arquivo `google-services.json`.
+- Coloque esse arquivo em:
+  `android/app/google-services.json`
+
+#### 🔹 iOS (opcional)
+
+- Registre seu app iOS no Firebase.
+- Baixe o arquivo `GoogleService-Info.plist`.
+- Adicione em:
+  `ios/Runner/GoogleService-Info.plist`
+
+---
+
+### 4. Ative os serviços no Firebase
+
+No painel do Firebase:
+
+- Vá em **Authentication** → Habilite **"Email e Senha"**.
+- Vá em **Firestore Database** → Crie um banco no modo de teste.
+- (Opcional) Vá em **Storage** se quiser armazenar imagens.
+
+---
+
+### 5. Rode o app
+
+Conecte um celular ou use um emulador, e execute:
+
+```bash
+flutter run
+```
