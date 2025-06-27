@@ -1,4 +1,4 @@
-# Projeto - Aplicativo de Receitas
+# atividade_aula_10
 
 A new Flutter project.
 
